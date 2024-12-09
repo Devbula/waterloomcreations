@@ -1,0 +1,26 @@
+version: '3'
+services: 
+  www:
+    build: .
+    image: php:apache
+    volumes: 
+      - "./:/var/www/html"
+    ports:
+      - 81:80
+      - 443:443
+  db:
+    image: mysql:8.0
+    environment:
+      - MYSQL_DATABASE=shop_db
+      - MYSQL_USER=ecommerce_u
+      - MYSQL_PASSWORD=password
+      - MYSQL_ALLOW_EMPTY_PASSWORD=1
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d"
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports: 
+      - 8001:80
+    environment:
+      - PMA_HOST=db
+      - PMA_PORT-3306

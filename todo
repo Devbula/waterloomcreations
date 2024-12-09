@@ -1,0 +1,47 @@
+ADMIN PAGE
+‌Change List of Order into table/tabular
+
+--------------------------------------------
+REGISTRATION FORM
+***‌Name format : ‌Separate Textbox of First Name from the Textbox of Lastname
+
+***Add textboxes for: name, email, phone number, and address
+‌
+Click Sign Up button > Homepage
+‌Once you click the sign up button, you'll be taken to the Homepage, Your Account already login. No need to fill up the Login form. 
+
+--------------------------------------------
+CHECKOUT FORM
+***‌Payment Mode
+‌For example, user choose Gcash to pay, add textbox/features that gets the needed extra details
+
+***‌‌Payment Mode Database
+‌Create/Add a database to the payment mode.
+
+***‌Remove textboxes for: name, email, phone number, and address
+
+Order Button : make it appear on the center
+
+---------------------------------------------
+CONTACT / SEND US A MESSAGE
+Remove textboxes for: name, email and number
+
+---------------------------------------------
+***USER HOMEPAGE / NAVIGATION BAR
+The Account+ must be remove or will be use as the User Profile page
+
+
+
+
+
+
+
+
+
+---------
+1. Dockerize the web application - Done
+2. Added dockerize credential in config file - Done
+3. Fix home page warning issue - move up the if statement to avoid $user_id is being undefined -> Done
+
+4. Rename home.php into index.php since the home page must not be accessible public. Must register and login first
+5. 
